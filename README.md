@@ -18,3 +18,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    if b == 0:
+        return "Error: No se puede dividir por cero."
+    return a / b
+
+print("Calculadora de multiplicar y dividir")
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+
+print(f"Multiplicación: {num1} * {num2} = {multiplicar(num1, num2)}")
+print(f"División: {num1} / {num2} = {dividir(num1, num2)}")
