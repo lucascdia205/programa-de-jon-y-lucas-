@@ -14,3 +14,26 @@ if num2 != 0:
     print(f"La división de {num1} entre {num2} es: {division}")
 else:
     print("No se puede dividir entre cero.")
+def sumar(a, b):
+    return a + b
+
+def restar(a, b):
+    return a - b
+
+def main():
+    print("Programa que suma y resta dos números.")
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    operacion = input("¿Quieres sumar o restar? (suma/resta): ").strip().lower()
+
+    if operacion == "suma":
+        resultado = sumar(a, b)
+        print(f"El resultado de la suma es: {resultado}")
+    elif operacion == "resta":
+        resultado = restar(a, b)
+        print(f"El resultado de la resta es: {resultado}")
+    else:
+        print("Operación no reconocida. Por favor, elige 'suma' o 'resta'.")
+
+if __name__ == "__main__":
+    main()
